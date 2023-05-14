@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+    <script>
+        //creating the child
+        let h1=document.createElement("h1")
+        h1.className="heading";
+        h1.style.fontSize="25px";
+        h1.textContent="Namaste";
+        console.log(h1);
+        document.body.appendChild(h1);
+        
+        //deleting of child( pakadna h phir nikalna h )
+        let ul = document.querySelector("ul")
+        console.log(ul);
+        let list=document.querySelectorAll("li");//selecting all the listas we ha
+        console.log(list);
+        
+        //for of is the best loop for array
+
+        for(li of list){//here li is behaving as an initializer with 0 value and list as length
+            ul.removeChild(li);
+        }
+
+    </script>
+</body>
+</html>

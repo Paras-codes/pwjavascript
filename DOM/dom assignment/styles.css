@@ -1,0 +1,26 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+div{
+    margin-bottom: 10px;
+}
+input{
+    width: 40px;
+    height: 30px;
+}
+span{
+    padding: 15px;
+    border: 1px black solid;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.btn{
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bolder;
+}

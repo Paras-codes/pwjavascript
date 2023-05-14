@@ -1,0 +1,42 @@
+<!-- //jb bhi koi insaan click kare to response kare page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event listener</title>
+
+
+</head>
+<body>
+<h1>hello baccho</h1>
+<p id="js"></p>
+<!-- on  click act act event listener on specific thing (event, kisko bulau agar event ho to) -->
+
+
+<button onclick="hey()" id="jss">submit</button>  
+
+<script>
+    //adding  a event specifically nii, pr puri body p
+    document.addEventListener("dblclick",hello)//it takes only two argument (Event,function to call)
+    
+    function hello(){
+        document.querySelector("p").innerText="Namaste baccho";
+    }
+    function hey(){
+        const obj = document.getElementById("jss");
+        console.log(obj);
+        obj.innerText
+        = "Next";
+        obj.style.fontSize="25px"
+        obj.style.padding="10px"
+        obj.style.border="1x"
+        obj.style.backgroundColor="black"
+        obj.style.color="white";
+        obj.style.borderColor="red"
+    }
+
+</script>
+</body>
+</html>

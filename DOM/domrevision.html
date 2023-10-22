@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom revision</title>
+</head>
+<body>
+    <!-- <h4 class="oho">hey <span>wow</span></h4>
+    <h4 id="hoho" t>Namaste</h4>
+    <h4 >kahe</h4> -->
+    <ul>
+        <li>okk</li>
+        <li>owow</li>
+        <li>kyunii</li>
+    </ul>
+    <script>
+        // let var1=document.getElementsByTagName("h4")
+        // var1[1].innerText="fuckyou"
+        // console.log(var1[0].innerHTML);
+        // var1[2].style.color="red"
+        // let var2=document.querySelector("#hoho")
+        // console.log(var2);
+        // var2.className="wowji"
+        // var2.classList="kyu nii jate"
+        // var2.setAttribute("title","hii");
+
+
+        // element bananah
+        let title=document.createElement("h1")
+        title.className="baccha";
+        title.style.color="red";
+        title.textContent="kyu ho yaha ";
+        console.log(title);
+        document.body.appendChild(title);
+
+        // Remove child
+       let ul=document.querySelector("ul");
+       console.log(ul);
+       let lists=document.querySelectorAll("li");
+       console.log(lists);
+       for(list of lists)
+       {
+            ul.removeChild(list);
+        }
+    </script>
+</body>
+</html>

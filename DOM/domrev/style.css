@@ -1,0 +1,13 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.but{
+    background-color: grey;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 20px;
+    border-radius: 20px;
+}
